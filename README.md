@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# TeamIconic Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack team management and performance tracking system built using React and Firebase.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+Deployed on Netlify  
+🔗 https://team-iconic-tracker.netlify.app
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Role-based access control (Owner, Admin, Member)
+- Secure authentication (Email & Google OAuth)
+- Real-time Kanban board with drag-and-drop
+- Admin console with analytics and activity logs
+- Firestore-based structured data management
+- Batch operations and transactional updates
+- Invite-code based registration control
+- Responsive UI for desktop and mobile
+- Cloudinary integration for media uploads
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠 Tech Stack
 
-### `npm test`
+Frontend:
+- React.js
+- Material UI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Backend & Database:
+- Firebase Authentication
+- Firestore Database
 
-### `npm run build`
+Deployment:
+- Netlify
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Other Tools:
+- Git & GitHub
+- Cloudinary
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔐 Architecture Overview
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Role-based access is managed using access levels stored in Firestore.
+- Conditional rendering ensures feature restriction based on user roles.
+- Firestore transactions are used for safe user registration.
+- Real-time listeners keep dashboard and Kanban board synchronized.
+- Admin console allows role management and activity tracking.
 
-### `npm run eject`
+## 📦 Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository
+2. Run `npm install`
+3. Create a `.env` file with Firebase credentials
+4. Run `npm start`
